@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		738EF45622C60522002CA294 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EF45522C60522002CA294 /* Utilities.swift */; };
+		738EF45622C60522002CA294 /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EF45522C60522002CA294 /* UIImageView+Cache.swift */; };
 		738EF45922C60BFA002CA294 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738EF45822C60BFA002CA294 /* WebKit.framework */; };
 		73A5D544219EF57D00FDC847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A5D543219EF57D00FDC847 /* AppDelegate.swift */; };
 		73A5D546219EF57D00FDC847 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A5D545219EF57D00FDC847 /* MasterViewController.swift */; };
@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		738EF45522C60522002CA294 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		738EF45522C60522002CA294 /* UIImageView+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
 		738EF45822C60BFA002CA294 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		73A5D540219EF57D00FDC847 /* NYTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A5D543219EF57D00FDC847 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +81,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		738EF45A22C6311C002CA294 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				738EF45522C60522002CA294 /* UIImageView+Cache.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		73A5D537219EF57D00FDC847 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +111,7 @@
 		73A5D542219EF57D00FDC847 /* NYTimes */ = {
 			isa = PBXGroup;
 			children = (
+				738EF45A22C6311C002CA294 /* Utilities */,
 				73A5D593219F0F2B00FDC847 /* Loader */,
 				73A5D58F219F002F00FDC847 /* AppDelegate */,
 				73A5D566219EF8DF00FDC847 /* ViewModel */,
@@ -113,7 +122,6 @@
 				73A5D54C219EF58000FDC847 /* Assets.xcassets */,
 				73A5D54E219EF58000FDC847 /* LaunchScreen.storyboard */,
 				73A5D551219EF58000FDC847 /* Info.plist */,
-				738EF45522C60522002CA294 /* Utilities.swift */,
 			);
 			path = NYTimes;
 			sourceTree = "<group>";
@@ -284,7 +292,7 @@
 				73A5D595219F0F5500FDC847 /* NYCLoader.swift in Sources */,
 				73A5D56C219EFEF900FDC847 /* NYCViewModel.swift in Sources */,
 				73A5D592219F009D00FDC847 /* NYCMasterCell.swift in Sources */,
-				738EF45622C60522002CA294 /* Utilities.swift in Sources */,
+				738EF45622C60522002CA294 /* UIImageView+Cache.swift in Sources */,
 				73A5D546219EF57D00FDC847 /* MasterViewController.swift in Sources */,
 				73A5D544219EF57D00FDC847 /* AppDelegate.swift in Sources */,
 			);
