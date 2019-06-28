@@ -1,18 +1,19 @@
 //
 //  NYCViewModel.swift
-//  NYCAssessment
+//  NYTimes
 //
-//  Created by Paurush on 29/06/19.
+//  Created by Paurush on 28/06/19.
 //  Copyright © 2019 Paurush. All rights reserved.
 //
 
 import Foundation
 
-let API_KEY = "LOi0UnAxXDyKKxL2yavEo2FEC3B31xwn"//"cb93bb547a22438c9e30577d0e84b221"
-let strArticleUrl = "http://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=\(API_KEY)"
+let API_KEY = "LOi0UnAxXDyKKxL2yavEo2FEC3B31xwn"
+let strArticleUrl = "http://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/30.json?api-key=\(API_KEY)"
 
 class NYCViewModel {
     var nycModel = [NYCModel]()
+    var filteredNews = [NYCModel]()
     
     func requestForNYCArticles(completionHandler: @escaping(() -> ())) {
         if let url = URL(string: strArticleUrl) {
@@ -38,5 +39,11 @@ class NYCViewModel {
                 completionHandler()
             }.resume()
         }
+    }
+    
+    func filteredNewsAccToSearch(text: String) {
+        self.filteredNews = self.nycModel.filter({ (model) -> Bool in
+            return model.title.lowercased().contains(text.lowercased())
+        })
     }
 }

@@ -29,7 +29,7 @@
         <!--Detail-->
         <scene sceneID="yUG-lL-AsK">
             <objects>
-                <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" customModule="NYCAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" customModule="NYTimes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,13 +90,13 @@
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
             <objects>
-                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="NYCAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="NYTimes" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="r7i-6Z-zg0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NYCMasterCell" rowHeight="100" id="hP0-FM-FMF" customClass="NYCMasterCell" customModule="NYCAssessment" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NYCMasterCell" rowHeight="100" id="hP0-FM-FMF" customClass="NYCMasterCell" customModule="NYTimes" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hP0-FM-FMF" id="x8w-Cd-DyJ">
@@ -112,7 +112,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FM4-Bz-Qod">
-                                            <rect key="frame" x="85" y="17" width="264" height="22.5"/>
+                                            <rect key="frame" x="85" y="18" width="264" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -152,7 +152,7 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="1gP-7f-yQM" secondAttribute="trailing" constant="10" id="emu-Ms-6zb"/>
                                         <constraint firstItem="FM4-Bz-Qod" firstAttribute="leading" secondItem="LRf-sW-NbJ" secondAttribute="trailing" constant="10" id="jyr-35-3Vp"/>
                                         <constraint firstItem="uSC-kY-Kjr" firstAttribute="leading" secondItem="baj-gb-Ebd" secondAttribute="trailing" constant="5" id="ktz-6P-Aaa"/>
-                                        <constraint firstItem="FM4-Bz-Qod" firstAttribute="top" secondItem="x8w-Cd-DyJ" secondAttribute="topMargin" constant="6" id="t5J-mH-r1E"/>
+                                        <constraint firstItem="FM4-Bz-Qod" firstAttribute="top" secondItem="x8w-Cd-DyJ" secondAttribute="topMargin" constant="7" id="t5J-mH-r1E"/>
                                         <constraint firstItem="1gP-7f-yQM" firstAttribute="leading" secondItem="LRf-sW-NbJ" secondAttribute="trailing" constant="10" id="vKE-qM-lnR"/>
                                         <constraint firstItem="LRf-sW-NbJ" firstAttribute="leading" secondItem="x8w-Cd-DyJ" secondAttribute="leading" constant="25" id="xuP-5t-OBx"/>
                                     </constraints>

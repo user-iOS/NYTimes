@@ -1,8 +1,8 @@
 //
 //  NYCLoader.swift
-//  NYCAssessment
+//  NYTimes
 //
-//  Created by Paurush on 29/06/19.
+//  Created by Paurush on 28/06/19.
 //  Copyright © 2019 Paurush. All rights reserved.
 //
 

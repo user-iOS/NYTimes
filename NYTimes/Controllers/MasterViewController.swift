@@ -1,8 +1,8 @@
 //
 //  MasterViewController.swift
-//  NYCAssessment
+//  NYTimes
 //
-//  Created by Paurush on 29/06/19.
+//  Created by Paurush on 28/06/19.
 //  Copyright © 2019 Paurush. All rights reserved.
 //
 
@@ -12,6 +12,7 @@ class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     let viewModel = NYCViewModel()
+    var isSearchEnabled = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,18 @@ class MasterViewController: UITableViewController {
         // Request for NYC data
         setUpData()
         setUpView()
+        setUpNavBar()
+    }
+    
+    fileprivate func setUpNavBar() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.placeholder = "Search Most Popular News"
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        definesPresentationContext = true
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -32,7 +45,7 @@ class MasterViewController: UITableViewController {
     }
     
     private func setUpView() {
-        self.title = "NY Times Most Popular"
+        self.title = "NY Times Popular"
         self.tableView.tableFooterView = UIView(frame: .zero)
     }
     
@@ -63,12 +76,12 @@ class MasterViewController: UITableViewController {
     // MARK: - Table View
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.nycModel.count
+        return isSearchEnabled ? viewModel.filteredNews.count : viewModel.nycModel.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NYCMasterCell", for: indexPath) as? NYCMasterCell
-        let model = viewModel.nycModel[indexPath.row]
+        let model = isSearchEnabled ? viewModel.filteredNews[indexPath.row] : viewModel.nycModel[indexPath.row]
         cell?.contentView.alpha = 0.0
         cell?.nycModel = model
         cell?.accessoryType = .disclosureIndicator
@@ -87,3 +100,17 @@ class MasterViewController: UITableViewController {
     }
 }
 
+
+extension MasterViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        searchController.searchResultsController?.view.isHidden = false
+        let searchText = searchController.searchBar.text!
+        if searchText.isEmpty {
+            isSearchEnabled = false
+        } else {
+            isSearchEnabled = true
+            self.viewModel.filteredNewsAccToSearch(text: searchText)
+        }
+        self.tableView.reloadData()
+    }
+}

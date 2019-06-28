@@ -1,8 +1,8 @@
 //
-//  NYCAssessmentTests.swift
-//  NYCAssessmentTests
+//  NYTimesTests.swift
+//  NYTimesTests
 //
-//  Created by Paurush on 29/06/19.
+//  Created by Paurush on 28/06/19.
 //  Copyright © 2019 Paurush. All rights reserved.
 //
 
