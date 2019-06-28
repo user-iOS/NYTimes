@@ -24,6 +24,10 @@ Unit Test cases are also integrated for the help of developers.
 
 [![Simulator-Screen-Shot-i-Phone-8-2019-06-28-at-17-01-24.png](https://i.postimg.cc/CLQkV1mr/Simulator-Screen-Shot-i-Phone-8-2019-06-28-at-17-01-24.png)](https://postimg.cc/8jLjR18L)
 
+
+[![Simulator-Screen-Shot-i-Phone-8-2019-06-28-at-17-06-00.png](https://i.postimg.cc/rwv8cX6L/Simulator-Screen-Shot-i-Phone-8-2019-06-28-at-17-06-00.png)](https://postimg.cc/5XScqrNP)
+
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
