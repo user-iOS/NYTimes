@@ -11,6 +11,7 @@ This project follows MVVM architecture, for better testability and transparent c
 This project helps you to see latest articles from NYC with their detailed description on next page.
 Features:
 - Articles List with Title, Author, and Published Date (UITableView).
+- Can perform local Search from available news feeds.
 - Detailed description on website (using WKWebView) of NYC, by clicking on article.
 
 ## Usage
