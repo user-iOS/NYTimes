@@ -20,9 +20,11 @@ With your own custom developer key you can also proceed for fetching news feeds.
 Go to "NYCViewModel" class to change the developer key.
 Unit Test cases are also integrated for the help of developers.
 
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-Please make sure to update tests as appropriate.
+## Screenshots
 
 [![Simulator-Screen-Shot-i-Phone-8-2019-06-28-at-17-01-24.png](https://i.postimg.cc/CLQkV1mr/Simulator-Screen-Shot-i-Phone-8-2019-06-28-at-17-01-24.png)](https://postimg.cc/8jLjR18L)
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Please make sure to update tests as appropriate.
